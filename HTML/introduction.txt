@@ -1,0 +1,224 @@
+HTML
+* stands for Hyper text markup language
+* used to create structure of web page
+* Also known as skeleton of web page
+* A single HTMl doc is known as web page.
+* Invented by "Tim Berners Lee" in 1991 . at wwwConsortium(cern).
+*Hyper text: it refers to an text on web page , which is linked internally together where another web page.
+* Markup language: it is an high level language , used to create structure of web page using tags.
+* Current vesion of html is html5.
+* Currently HTML language is managing by WHATWG(Web Hypertext Application Technology Working Group).
+
+
+* Features of HTML
+-> It is widely used markup language on web development to develop web page.
+-> It is Easy to Learn.
+-> It is light weighted and fast to load.
+-> Supports to stop large file and it is defauletly enabled browser engine;
+-> MAjor Browser supports html.
+-> It is case insensitive.
+
+** Structure of HTML
+   <!DOCTYPE html> -> Holds  Current version.
+   <html> -> Know as root element,indicates the starting point.
+   <head>
+        <link> -> used to link external styling sheets (css) to change the icon
+        <meta> -> contains descriptions | hidden properties
+        <title> </title> -> Add title to web page
+        <script> </script> -> To embed /link client side Scripting file(JS|JS)
+        <style> </style> -> To embed styling property into doc
+    </head>
+    <body>
+       --> content <---
+    </body>
+    </html>  
+
+                        Browser                                          
+                       ↙          ↘
+                  HTML               css    
+                   ↓                  ↓
+               HTML Parse          CSS Parser    
+                    ↓                    ↓
+                  DOM                   CSSOM    
+                      ↘                  ↙
+                       Rendered Tree    
+                              ↓
+                           Layout          
+                              ↓
+                           Painting       
+                              ↓
+                           Compose     
+                              ↓
+                           Screen        
+                              ↓
+                            User         
+
+  Tag : 
+  => Tags are the predefined keywords written inside angular bracket(<>)
+  => Tags acts like container to hold content ,and tells the browser how the display the content the user.
+  => Example : <html>, <img> and <vedeo>
+  => Types :
+  1. Paired tag:
+            ** The tags which are having both opening and closing tags.
+            ** Also Known as double tag
+            ** Paired tags hold the content inside it and returns the content.
+            ** Syntax:
+                 <open> text content </close>
+            ** Example : <title></title>, <p> </p>, <vedeo> </vedeo>
+
+   2. Unpaired tag:
+         ** The tag which closes by itself /the tags which are having only opening tag are known as unpaired tag.
+         ** Also Known as single tag, void elements (returns nothing).
+         ** syntax :
+            <open attributes> 
+         ** Example: <link>, <meta>, <img>, <hr> and <br>                                    
+
+     => Heading tags
+       1. <h1></h1>  -> Main heading tags and should be used only one time in one page
+       2. <h2> </h2>
+       3. <h3> </h3>
+       4. <h4> </h4>
+       5. <h5> </h5>
+       6. <h6> </h6>
+
+  => Semantic element  :
+  * Elements those describes the content meaning and purpose.
+  * Used for readability, SEO optimisation.
+  * Example : <div> -> <nav> to describe navigation content.
+                       <aside> to create side menu.
+                       <main>/ <article> to describe main content in the web page
+                       <footer> to describe footer content.
+
+                    <b> -> <strong>
+                    <u> -> <ins>
+                    <i> -> <em>      
+
+    => Attributes :
+       * Attributes are part of markup language , used to add behavior and style to an html element.
+       * Makes tags as fully functional.
+       * common attributes - style , id, class, name, type, src, href, controls, checked, etc....
+
+       * Syntax :
+       <open attr_name = "value"> Content </close>  
+
+  ** Body tag attributes:
+   1> bgcolor: define background color to web page
+   2> background : adds an image in background
+   3> align :  align the items in the left right top buttom
+   4> text  :    define color of text content
+
+** Text Document
+ 1> <p> - Paragraph
+  -> USed to insert text doc
+  -> It is paired tag, block element.
+  -> USed in adding descriptions ,detailed text.
+  Syntax :
+       <P> Content </p>
+       Note : if wont allow for any spaces rather than single white spaces
+
+  2> <br> - break Tag
+   -> USed to break the line at any point;
+   -> Unpaired and void element
+   -> doesnot support for any attributes
+     ---------|
+     -----
+
+  3> <hr> -> horizontal Rules
+    -> It will cause the browser to display a horizontal line across the window
+    -> Unpaired
+    -> Style , color
+
+  4> <pre> ->predefined /preformatted
+     -> aAllows the developer to maintain white space ,table space and new lines
+
+** Insering images
+ -> to insert image ,use <img> tag.
+ -> it is a single tag, void element.
+ -> it is a inline element.
+ ->used to insert static images
+ -> preferably .webb images should be usedn in web page
+ -> Syntax: 
+       <img src = "" alt>
+   
+   -> Attributes
+   1.src - source : Name/path/url of the image
+   2.alt - alternate: describes the alternative name given to image to enhance screen readability. it works in the absense of source
+   3. height & width - px , %.
+   4. title 
+
+ ** Picture
+ -> To insert responsive image according to the diffrent devices <picture> tag will be used
+ -> it is paired tag, contains <source> that defines different sources to different devices
+ -> Syntax:
+   <picture>
+       <source media="" srcset ="">
+       <source media = "" srcset="">  
+       <source media = "" srcset="">  
+       <img src="" alt="">
+   </picture>
+** inserting vedeo
+ -> <vedeo> tag is used to insert video into the web page.
+ -> it is paired tag, hold the content to display an error message when browser is not supporting
+ -> it doesnot support to insert youtube vedeos
+ -> Synrax:
+    <vedeo src=""> Video supported by browser </vedeo>
+  -> Attributes:
+    1. src
+    2. autoplay
+    3. muted
+    4. controls
+    5. loop
+    6. poster
+    
+Inserting Audio
+-> <audio>
+-> Paired, inline element
+-> syntax :
+      <audio src="">
+          Audio format not suppoeted by browser
+       </audio>
+
+ -> Attributes
+   1.src
+   2. controls
+   3. loop
+   4. muted
+   5. width -> %
+
+IFRAME 
+  -> stands for inline frame.
+  -> <iframe> is used to create nested web page.
+  -> it is paired, inline.
+  -> it is used to embed external web pages into our web page.
+  *Syntax:-
+      <iframe src="" frameborder="">
+        file format not supported by browser
+
+      -> Attrubutes :
+         src: source ->name/path/url
+         frameborder: -> define border around iframe
+      -> Ex:
+        Payment intigration ,youtube videos, google map.
+
+  SPECIAL CHARACTERS
+  -> HTML ALLOWS DEVELOPERS TO INSERT SPECIAL INTO WEB PAGE BY PROVIDING ENTITIES.
+  -> WE CAN INSERT LOGICAL,MATHMETICAL,CURRENCY.
+
+  -> Syntax
+    &Entity-name;
+       OR                    
+   &# Entity-number;
+   &# 65:-> a
+   &# 8377; ->
+
+HYPER LINKS
+-> IT IS AN METHOD TO CREATE HYPERTEXT.
+-> <a> (Anchor) tag is used to create Hyper text
+-> Paired tag and inline element
+-> syntax
+   <a href='' target=''>Content </a>
+
+-> Attribute:
+   1.href : Hyper Reference -> Name/path/url
+   2.target: New page location decides
+   3.download: used to download files from server   
