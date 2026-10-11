@@ -12,7 +12,6 @@
     -> we can collect text ,password,number,email,date,time,url,file,color.
     controls:
        checkbox radiobutton dropdown menu
-     -->
        <form action="">
              <label for="UserName">Enter UserName</label>
              <input type="text" name="'UserName" id="UserName" value="" placeholder="Jspiders" maxlength="12" minlength="6" required pattern="[a-zA-Z0-9&]+1" accept=".pdf"> <br><br>
@@ -31,6 +30,71 @@
              <input type="time" name="" id=""> <br><br>
              <input type="url" name="" id="">  <br>
              <input type="week" name="" id=""> <br><br>
-       </form>
+       </form> -->
+       <!-- RAdio button -->
+        <p>Payment mode</p>
+        <input type="radio" name="payment" id="pay-later"> <label for="pay-later">Pay latter</label><br><br>
+        <input type="radio" name="payment" id="net"><label for="net">net/mobile Banking </label> <br><br>
+        <input type="radio" name="payment" id="credit"><label for="credit">credit/Debit Card</label><br><br>
+        <input type="radio" name="payment" id="upi"><label for="upi">UPI</label><br><br>
+        <input type="text" name="" id=""disabled><br><br>
+        <input type="radio" name="payment" id="emi"><label for="emi">EMI</label><br><br>
+        <input type="radio" name="payment" id="cod"><label for="cod">COD</label> 
+        <hr>
+        <!-- Drop doen menu -->
+         <p>Choose your domain</p>
+         <select name="" id="">
+          <option value="" hidden>-----choosehere----</option>
+          <option value=""selected> Software Development</option>
+          <option value="">Software Testing</option>
+          <option value="">Deveops</option>
+          <option value="">Network and Security</option>
+          <option value="">Support</option>
+         </select>
+         <hr>
+         <!-- Data List -->
+          <input type="text" list="products" placeholder="Search your products here....">
+          <datalist id="products">
+            <option value="Mobile">
+              <option value="Refridgerator"></option>
+            <option value="Laptop"></option>
+            <option value="Shoe"></option>
+            <option value="T-Shirt"></option>
+            <option value="Groceries"></option>
+            <option value="Wahsing Machine"></option>      
+          </datalist>
+          <hr>
+          <!-- text -area -->
+           <p>Rating and feedback</p>
+           <h1>⭐⭐⭐⭐</h1>
+           <textarea name="" id="" cols="30" rows="10" style="resize: none;" placeholder="Whats you mind..." maxlength="100"></textarea>
+
+           <!-- buttons -->
+            <input type="submit" value="Login">
+            <input type="button" value="Delete">
+            <input type="reset" value="Reset">
+
+            <button type="submit">Login</button>
+           
+        <!-- check box -->
+       
+         <p>Choose your skill</p>
+         <input type="checkbox"><label for="">java</label>
+         <input type="checkbox"> <label for="">Spring</label>
+         <input type="checkbox"><label for="">JDbC</label> <br>
+         <input type="checkbox"> <label for="">hibernate</label>
+         <input type="checkbox"><label for="">Spring Boot</label>
+         <input type="checkbox"> <label for="">Sql</label><br>
+         <input type="checkbox"><label for="">Web dev</label>
+         <input type="checkbox"><label for="">WebTech</label>
+         <input type="checkbox"><label for="">HTML</label><br>
+         <input type="checkbox"><label for="">CSS3</label>
+         <input type="checkbox"><label for="">JS-ES6</label>
+         <input type="checkbox"><label for="">Reasoning</label><br>
+         <input type="checkbox"><label for="">CI/CD</label>
+         <input type="checkbox"><label for="">GIT</label>
+         <input type="checkbox"><label for="">Srum</label>
+
+
 </body>
 </html>
