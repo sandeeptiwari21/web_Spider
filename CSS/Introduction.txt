@@ -1,0 +1,97 @@
+CSS
+* Stands for Cascading style sheets
+* used to increase standards and overall look of web page to make it presentable
+* with css user can understand the web page content easily by making ui as rich
+**HIstory
+  -> CSs invented in w3(consortium) on 17 th dec,1996 by hakon wiem lie
+
+  ** USES
+  -> improves looks
+  -> Seprates content and design
+  -> maintain consistancy across multiple pages
+  -> Makes web pages as responsive for different types of devices (mobile,tablets,laptop).
+  -> Reduce code duplication
+  -> Adds Visuals effects like animation,transition, transformation
+
+  ** How to use CSS?
+   selector {
+       prop: value;
+   }
+
+   -> Selector : Targetting HTML element by using its name id class.
+   -> Declaration block contains one or more CSS declarations seperated by ";".
+   -. one Declaration contains css property name and value seprated by ":"
+   -> we cannot write duplicate css property in same declaration block,if it is so always last occurence will executes.
+
+* HoW CSS Works
+ -> when css loaded into the browser ,tree like structure called CSSOM(cascading style sheet object model) will be created after parsing css in browser
+ -> just like as the browser converts HTML into a dom(document object model) , ikt converts css into csspm.
+   -> Later Browser will combines both Dom and CSSom to create a render tree.
+                          Browser                                          
+                       ↙          ↘
+                  HTML               css    
+                   ↓                  ↓ 
+               HTML Parse          CSS Parser    
+                    ↓                    ↓
+                  DOM                   CSSOM    
+                      ↘                  ↙
+                       Rendered Tree    
+                              ↓
+                           Layout          
+                              ↓
+                           Painting       
+                              ↓
+                           Compose     
+                              ↓
+                           Screen        
+                              ↓
+                            User   
+   ** Types of CSs
+   1. Inline CSS:
+    -> Writing css property by using 'style' attrubute directly into the html elemnets.
+    -> Syntax:
+             <h1 style="color:'blue';font-size:'30px'"</h1>
+      -> Advantages:
+       >> Good for small change.
+       >> it is having high priority
+   -> Disadvantage:
+       >> it is required to apply for each and every html element.
+       >> not reusable.
+
+   2.Internal Css:
+   _> writing the css property inside <style> tag int the HTML document.
+   -> Advantages:
+   >> reusable
+   >> Easy to access
+   >>Better for single pages.
+
+   -> disadvantages
+    >> cannot reuse across multiple pages.
+
+  3. External CSS;
+   ->keeping styling property in seprate css file
+   -> can be connected to html using link tag
+   -> Advantage
+    >> can be used across multiple web pages
+    >> Most recomended
+    >> Easy to maintain.  
+  BOX model 
+  -------------
+
+  * It is an illustaration of box, which wraps around each and every html element.
+  *mainly consists of content, margin,padding and border.
+  * it is used to maintain space betrween elements.
+  *contents of box model1
+    1.Content: it is core part box model .it can content of any type like text,image,video,table, form...
+    2. Padding : Padding goes around content.
+    -> it clears the area between content and brother.
+    -> it is transparent in nature
+    -> Applying -ve padding is not possible.
+   3> Border : Border goes around content and padding.
+    -> it is visible to the user
+
+   4> Margin: it goes around border.
+   -> Clears the area between window/ parent to border.
+   -> it is transparent.
+   -> can apply -ve margin.
+   
