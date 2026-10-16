@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div{
+        height:100vh;
+        width:100%;
+        background-color: aqua;
+         margin-bottom: 10%; 
+      }
+      /* ID Selector */
+      #primary-wrapper{
+        background-color: red;
+      }
+      /* class selector */
+      .wrap{
+        background-color: aquamarine;
+      }
+      .extra-prop{
+        border:5px blue solid;
+      }
+      /* Attributes selector */
+      input[type="text"]{
+        border: 2.5px red solid;
+      }
+      input[type="password"]{
+        border: 2.5px blue solid;
+      }
+      input[type="submit"]{
+        border: none;
+        background-color: color-mix(in srgb, yellow 50%, red 50% );
+        font-size: 25px;
+        height: 55px;
+      }
+      input{
+        display: block;
+        margin: 5px;
+      }
+      /* Group Selector */
+      h1,p,#span-section{
+          color:white;
+          text-transform: uppercase;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+      }
+      /* Universal selector */
+      *{
+        margin:0px;
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+    </style>
+</head>
+<body>
+    <div id="primary-wrapper">
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+        <input type="submit" value="Login">
+    </div>
+   <div class="wrap">
+     <h1>This is example for group selector</h1>
+     <p>This is example of for group selector</p>
+     <h3 id="span-section">This is example for group selector</h3>
+   </div>
+   <div></div>
+   <div class="wrap extra-prop"></div>
+   <div></div>
+   <div class="extra-prop"></div>
+</body>
+</html>

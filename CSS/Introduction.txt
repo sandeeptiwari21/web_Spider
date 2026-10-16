@@ -95,4 +95,61 @@ CSS
    -> it is transparent.
    -> can apply -ve margin.
    
+
+
+
+
+
+
+
+   1> Basic selector:
+   a> Tag/Name Selector:
+   -> Targeting an html element by using its tag name.
+   -> Syntax: 
+        <tag> Content </tag>
+         #css
+           tag{
+            //css prop
+           }
+   b> Id selector:
+   -> selectijng an element by writing a 'id' attribute ,to apply css property.
+   -> Id should be unique in whole web page
+   -> cannnot be duplicated
+   -> Creating sub id is not allowed
+  -> Uses '#' followed by id-name
+  -> Syntax:
+   # id-name{
+      //prop
+   }    
+   <tag id= "id-name"> content </tag>
+
+ C> Class Selector :
+ -> Selecting an element.byb using'class' attribute to apply css prop
+ -> class can be duplicated
+ -> Craeting sub class is allowed
+ -> uses '.' to select an class to apply css
+ _+-> Syntax
+  .class_name { } 
+  <tag class = "class-name">
+ D> Attribute selector
+ -> Targeting an html element by using its attribute
+ -> Syntax
+    Selector[attribute="value"] {} 
+    <tag attribute ='value'>
+
+E> Group Selector
+-> Targeting two or more selection to apply same css property by using ','(comma Seperation)
+-> Syntax:
+ Sel1,sel2,sel3{
+   //css prop
+ }   
+
+ f> Universal Selector
+ -> Select all html elememnts on the web pages to apply same css property
+ -> uses '*' operator
+ -> syntax:
+   *{
+      property
+   }  
+   -> commonly used in removing margin from all elemnts and to decide box-sizing   
    
