@@ -25,7 +25,7 @@ CSS
 
 * HoW CSS Works
  -> when css loaded into the browser ,tree like structure called CSSOM(cascading style sheet object model) will be created after parsing css in browser
- -> just like as the browser converts HTML into a dom(document object model) , ikt converts css into csspm.
+ -> just like as the browser converts HTML into a dom(document object model) , ikt converts css into cssom.
    -> Later Browser will combines both Dom and CSSom to create a render tree.
                           Browser                                          
                        ↙          ↘
@@ -84,7 +84,7 @@ CSS
   *contents of box model1
     1.Content: it is core part box model .it can content of any type like text,image,video,table, form...
     2. Padding : Padding goes around content.
-    -> it clears the area between content and brother.
+    -> it clears the area between content and border.
     -> it is transparent in nature
     -> Applying -ve padding is not possible.
    3> Border : Border goes around content and padding.
@@ -95,9 +95,32 @@ CSS
    -> it is transparent.
    -> can apply -ve margin.
    
+   **@ Selector
+   -> It is an method to select an html element to apply css property
 
+   *Types 
+   1> BAsic Selector
+   a>Tag/Name
+   b>Class
+   c> Id
+   d>Attributr
+   e>Group
+   f> Universal
 
+   2> Combinators
+   a>Descendant b>child c> Adjucent sibling d> General sibling
 
+   3> pseudo-classes
+   a>link b> active c> visited d> hover e> focus f> first-child g> last -child h> nth-child() i>nth-child(even/odd) j>has()  k> not() i> checked() m> root
+
+   4> pseudo-elements
+   a> first-letter
+   b> first-line
+   c> before
+   d> aftere
+   e> selection
+   f> marker
+   g> placeholder
 
 
 
@@ -152,4 +175,17 @@ E> Group Selector
       property
    }  
    -> commonly used in removing margin from all elemnts and to decide box-sizing   
+
+ ** Opacity in css
+ -> Applying transperancy to an html element
+ -> 0-1 
+ ->0- completly visible
+ -> 1 visible
+** Gradient
+-> Smooth transition between two or  more color
+-> Types
+1> Linear-gradient;
+2> Radial-gradient:
+3> conic-gradient
+   
    

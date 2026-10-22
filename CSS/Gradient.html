@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;       
+        } 
+        .wrapper{
+            height:100vh;
+            width: 100%;
+        }
+        .lg-1{
+           background-image: linear-gradient(yellow 0px 350px,lime 400px,red);
+        }
+        .lg-2{
+            background-image: linear-gradient(130deg,magenta,lime);
+        }
+        .lg-3{
+            background-image:repeating-linear-gradient(35deg,magenta 0px,lime 20px, indigo 60px);
+        }
+        button{
+            height: 60px;
+            width: 380px;
+            margin:10px;
+            background-image: linear-gradient(yellow,lime);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper lg-1"><button><h1>Submit</h1></button></div>
+    <div class="wrapper lg-2"></div>
+    <div class="wrapper lg-3"></div>
+    <hr>
+    <style>
+        .main{
+            height: 100vh;
+            width: 100%;
+        }
+        .title{
+            height:50%;
+            width: 49.5%;
+            display: inline-block;
+        }
+        .one{
+             background-image:repeating-linear-gradient(135deg,magenta 0px,lime 20px, indigo 60px);
+        }
+       .two{
+          background-image:repeating-linear-gradient(45deg,magenta 0px,lime 20px, indigo 60px);
+       }
+       .three{
+         background-image:repeating-linear-gradient(225deg,magenta 0px,lime 20px, indigo 60px);
+       }
+       .four{
+          background-image:repeating-linear-gradient(315deg,magenta 0px,lime 20px, indigo 60px);
+       }
+    </style>
+    <div class="main">
+        <spain class="title one"></spain>
+        <spain class="title two"></spain>
+        <spain class="title three"></spain>
+        <spain class="title four"></spain>
+    </div>
+    <hr>
+    <!-- Radial Gradient -->
+    <style>
+        .rg-1{
+           background: radial-gradient(circle,magenta 0%,indigo 50%,lime);
+        }
+        .rg-2{
+            height:600px;
+            width: 600px;
+            margin: auto;
+            background: radial-gradient(circle farthest-side at 30% 30%, white,black);
+            border-radius: 50%;
+        }
+        .rg-3{
+            height: 100vh;
+            width: 100vh;
+            margin:auto;
+            background:repeating-radial-gradient(circle, gray 0px, white 10px,black 20px);
+        }
+    </style>
+     <div class="wrapper rg-1"></div>
+     <hr>
+     <div class="wrapper rg-2"></div>
+     <hr>
+     <div class="wrapper rg-3"></div>
+     <hr>
+     <!-- Conic gradient -->
+      <style>
+         .cg-1{
+            background: conic-gradient(red,yellow,lime,magenta);
+         }
+         .cg-2{
+            height:100vh;
+            width: 100%;
+             background: conic-gradient(red 0deg 90deg,yellow 90deg 180deg,lime 180deg 270deg,magenta 270deg 360deg);
+         }
+         .cg-3{
+            height:100vh;
+            width: 100vh;
+            background: repeating-conic-gradient(red 0deg 30deg,yellow 30deg 60deg,lime 60deg 90deg);
+         }
+      </style>
+      <div class="wrapper cg-1"></div>
+      <hr>
+      <div class="wrapper cg-2"></div>
+      <hr>
+      <div class="wrapper cg-3"></div>
+</body>
+</html>
