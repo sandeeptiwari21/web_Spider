@@ -187,5 +187,53 @@ E> Group Selector
 1> Linear-gradient;
 2> Radial-gradient:
 3> conic-gradient
-   
-   
+
+** Combinators
+-> used to combine two or more selector to apply css property  to a particular element.
+-> creates or explain the relationship between one selector to another selector.
+
+**Types of Combinators
+
+1> Descendant Combinators
+2> Child Combinators
+3> Adjacent sibling Combinator//Next child
+4> General sibling Combinators //All child
+
+*Descendant Combinator or selector
+-> Stands for a member who belongs to same family.
+->selects an html element which is descendant of specified element.
+-> it uses ' ' (space) to combine selector
+
+** Syntax:
+   sel1 sel2{
+      //prop
+   }
+
+2> Child combinator:
+-> it select an html elemnt ,if that element is direct child to specified selector.
+->it uses '>' to combine slector 
+
+3> ADJUCENT SIBLING Selector
+->Adjucent stand for a sibling who follows immediately after.
+-> select an html element if it is adjucent to specified selector
+it uses '+'
+-> Syntax
+ sel 1 + sel2 {
+   //prop
+ }
+
+ 4>Genral sibling selector
+ -> Selects all matching elements those are following after specified element.
+ -> it use '~' (tild) 
+
+ -> Syntax:
+   sel1~sel2{
+      //prop
+   }
+
+** Flex
+-> Flex stands for flexible box;
+-> It makes an html element as inline-level-block container and creates a realationship of parent and child .parent element called as flex-box and children are called as flex items.
+-> Handles the child element in either one directional and ondimensional   either rowwise or columnwise
+-> Mainly used in managing space alignment and direction of child element and it is most famously used for making web page as responsive
+->

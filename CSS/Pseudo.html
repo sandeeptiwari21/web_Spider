@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--  
+        **.+->
+        Pseudo -class
+        * it is one type of selector 
+        * Used to change the state of whole selected html element.
+        * it targets html elements on links available on web page and based on user interaction and based on position of element dom.
+        *Syntax:
+           selector : pseudo-class{
+               css property
+           }
+       ** TYPES:
+         1.Link -> Changes the state of unvisitedlinks available on web page 
+         2. visited-> changes the stste of visited links on the web page
+         3.active -> It show the active state of an html element ,when use clicks on html element
+         4 hover -> change the state of an html element user takes cursor over element
+         5. focus -> Used to change the state of an input element when user clicks on its
+         6 first-child -> 
+         7. last-child
+         8. nth-child
+         9. checked -> chnage the element when element is checked
+         10 has() -> 
+         11.not()
+         12 root      
+     
+     --> 
+         <style>
+            .links>a{
+                text-decoration: none;
+                font-size: 1.3rem;
+                line-height: 80px;
+            }
+            .links>a:link{
+                color:red;
+            }
+            .links>a:visited{
+                color: brown;
+            }
+            .links>a:active{
+                color:yellowgreen;
+            }
+            .links>a:hover{
+                color: magenta;
+                font-size: 5rem;
+                font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+            .links>a:focus{
+                background-color: red;
+            }
+            .links>a:first-child{
+                color: black;
+            }
+            .links>a:last-child{
+                background-color: green;
+            }
+            .links>a:nth-child(3){
+                color: black;
+            }
+            button{
+                height:60px;
+                width:300px;
+                margin-left: 20px;
+                background: linear-gradient(30deg,lightskyblue,indigo);
+                border:none;
+                border-radius: 15px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                outline: 3px white solid;
+                outline-offset: -10px;
+                color: white;
+                transition: all 200ms linear;
+            }
+            button:active{
+                transform: scale(0.95);
+            }
+
+            button:hover{
+                outline: 3px color-mix(in srgb, blueviolet 50%, magenta 50%) solid;
+                outline-offset: 7px;
+            }
+
+            .links>a:hover{
+                color:lemonchiffon;
+                font-size: 5rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-shadow: 5px 4px 0px black;
+                font-weight: 900;
+            }
+
+
+         </style>
+         <div class="links">
+         <a href="https://www.google.com">Google</a> <br>
+         <a href="https://www.instagram.com">Instagram</a> <br>
+         <a href="https://www.linkedin.com">Linkedin</a><br>
+         <a href="https://www.github.com">github</a><br>
+         <a href="https://www.vercel.com">vercel</a><br>
+         <button>Clcik here</button> <hr>
+         <style>
+            .img-wrap{
+                height: 320px;
+                width: 450px;
+                border-radius: 15px;
+                margin: auto;
+                overflow: hidden;
+            } 
+            .img-wrap img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            .img-wrap img:hover{
+                transform: scale(1.05);
+                 transition: transform 800ms ease-in-out; 
+            }
+         </style>
+         <div class="img-wrap">
+         <img src="https://static0.carbuzzimages.com/wordpress/wp-content/uploads/2024/07/def_octa_25my_dynamic_05.jpg" alt="">
+         <p>Land rover</p>
+         </div>
+         <hr>
+         <style>
+            input[type="text"]{
+                box-sizing: border-box;
+                height: 50px;
+                width: 50px;
+                border: black 1.5px solid;
+                border-radius: 200px;
+                margin-left: 25%;
+                padding-left: 10px;
+                font-size: 1.1rem;
+                outline:none;
+                transition: all 1s linear;
+            }
+            input[type="text"]:focus{
+                width: 450px;
+                border: 1.5px lime solid;
+                box-shadow: 0px 0px 10px 3px lime;
+            }
+         </style>
+         <input type="text" name="" id="" placeholder="Search your product here..">
+         <hr>
+         <style>
+             .primary-text p:nth-child(7){
+                color: blue;
+                font-size: 50px;
+             }
+            .primary-text p:nth-last-child(2){
+                color:red;
+                font-size: 50px;
+            }
+            .primary-text p:first-child{
+                color:blue;
+                font-size: 50px;
+            }
+         </style>
+         <div class="primary-text">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+          <p>6</p>
+          <p>7</p>
+          <p>8</p>
+          <p>9</p>
+          <p>10</p>
+         </div>
+         <hr>
+         <style>
+          input[type='radio']:checked{
+            accent-color:lime;
+          }
+          input[type='radio']:checked+label{
+            color:magenta;
+          }
+
+         </style>
+          <p>chose Gender</p>
+          <input type="radio" name="gender" id=""> <label for="">MALE</label>
+           <input type="radio" name="gender" id=""> <label for="">Female</label>
+            <input type="radio" name="gender" id=""> <label for="">Others</label>
+
+
+            <div class="all-food">
+                   <div class="card">
+                      <div class="food-img">
+                         <img src="" alt="">
+                      </div>
+                      <h2></h2>
+                      <h3></h3>
+                   </div>
+            </div>
+         <pre>
+
+
+
+
+
+
+
+
+         </pre>
+
+      </div>
+</body>
+</html>

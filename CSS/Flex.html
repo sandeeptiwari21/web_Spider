@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .wrapper{
+            height: 80vh;
+            weidht: 80%;
+            background-color: aquamarine;
+            box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.666)inset;     
+
+            display: flex;   
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            
+            
+        }
+        .wrapper>.item{
+             height: 180px; 
+            width: 180px;
+             box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.666)
+             inset;
+              color: white; 
+             font-size: 2rem;
+             font-weight: 900;
+             text-align: center;
+           
+        }
+        .wrapper>.item:nth-child(1){
+            background-color: burlywood;
+        }
+         .wrapper>.item:nth-child(2){
+            background-color: blueviolet;
+        }
+         .wrapper>.item:nth-child(3){
+            background-color: magenta;
+        }
+         .wrapper>.item:nth-child(4){
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            border: 2px solid black;
+            margin: 3%;
+            padding: 5%;
+        }
+      .one p{
+            color: red;
+            font-weight: 900;
+        }
+        /* div p{ 
+            color: black;
+        }*/
+    </style>
+
+</head>
+<body>
+    <p>Dipak babu </p>
+   <div class="wrapper one">
+      <p>Wrapper one</p>
+      <div class="wrapper two">
+         <p>Wrapper two</p>
+         <div class="wrapper three">
+            <p>wrapper Three</p>
+         </div>
+      </div>
+   </div>
+
+   <hr>
+   <style>
+     .tiwari{
+        border: 2px red solid;
+        margin:10px;
+     }
+     .shukla{
+        border: 2px blue solid;
+        margin: 10px;
+     }
+    /* .tiwari h1{
+          color: darkblue;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 1.5rem;
+     }
+     .shukla .next-gen p{
+         color: darkblue;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 1.5rem;
+     }*/
+     .tiwari .next-gen > p{
+        color:tomato;
+        font-size: 4rem;
+
+     }
+
+   </style>
+   <div class="tiwari">
+     <h1>This is sandeep Tiwari</h1>
+     <p>This is indu tiwari</p>
+     <div class="next-gen">
+        <h1>This is adarsh tiwari</h1>
+        <p>This is adarsh tiwari wife</p>
+        <div class="next-next-gen">
+            <h1>This is son of adarsh tiwari</h1>
+            <p>This is daughter in law in adarsh tiwari</p>
+        </div>
+        <h1>Some one gent from tiwari family</h1>
+     </div>
+   </div>
+    <div class="shukla">
+     <h1>This is sandeep shukla</h1>
+     <p>This is indu shukla</p>
+     <div class="next-gen">
+        <h1>This is adarsh shukla</h1>
+        <p>This is adarsh shukla wife</p>
+        <div class="next-next-gen">
+            <h1>This is son of adarsh shukla</h1>
+            <p>This is daughter in law in adarsh shukla</p>
+        </div>
+        <h1>Some one gent from shukla family</h1>
+     </div>
+   </div>
+   <hr>
+   <!-- General Sibling selector -->
+    <style>
+      .another div~p{
+         color:yellow;
+         background-color: darkgreen;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+    </style>
+   <div class="another">
+     <h1>This is First child</h1>
+     <p>This is 2nd child</p>
+     <div>This is 3 rd class</div>
+     <h4>This is 4th child</h4>
+     <p>This is 5 th child</p>
+     <span>This is 6 th child</span>
+     <p>This is 7th child</p>
+     <h4>This is 8th child</h4>
+
+   </div>
+   <hr>
+   <style>
+      label{
+         font-size: 1.2rem;
+         padding: 0px 7px;
+         border-radius: 6px;
+         background-color: bisque;
+      }
+      input[type="radio"]+label{
+         color:white;
+      }
+      input[type="radio"]:checked+label{
+          color:black;
+      }
+   </style>
+   <P>CHOOSE YOUR GENDER</P>
+   <input type="radio" name="gender" id=""> <label for="">Male</label>
+   <input type="radio" name="gender" id=""> <label for="">Female</label>
+    <input type="radio" name="gender" id=""> <label for="">others</label>
+
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+
+    
+</body>
+</html> 

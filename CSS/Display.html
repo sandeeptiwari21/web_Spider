@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: magenta;
+            height: 100%;
+            /* width: 250px; */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Display property
+     >> Display property Defines the display behavior of an html element
+     >> Types
+        1>Block
+        2> None
+        3> Inline
+        4> Inline- block
+        5> flex
+
+    *Block 
+        -> it is difault for some elements.
+        -> block element always consume  whole width of window
+        -> Block elements starts with the new line.
+        ->Block elements accepts hight and width.
+        ->EX : all heading tags, <div>,<li>, <P> ..etc    
+    ** None 
+        -> Eliminates elements completely from window layout
+        *INLINE 
+        -> it is def for few html elemnets
+        -> Display elemenyts as inline i.e in same line side by side.
+        -> Height and width wont have any effect.
+    *inline- block
+     -> Makes element to be displayed in same line as inline-level
+     -> Elements accepts height and width    .
+     -->
+            <h1>SSpiders</h1>
+            <h1>Lucknow</h1>
+            <h1>Bhopal</h1>
+            <!-- example for block  -->
+          <style>
+            /* Navigation bar in laptop screen exa,mple for inline */
+            nav{
+                background-color: aqua;
+                height: 60px;
+                /* width: 250px; */
+                border-radius: 20px;
+                text-align: center;
+                padding-top: 20px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+            }
+
+            nav a{
+                text-decoration: none;
+                padding: 12px 40px;
+                font-size: 1.2rem;
+                color: darkgreen;
+                font-weight: 900;
+                border-radius: 15px;
+            }
+
+            nav a:hover{
+                background-color: gray;
+                 color:blanchedalmond;
+                 border-radius: 5PX;
+                 font-size: 1.5rem;
+                 outline: none;
+                 text-decoration: none;
+            }
+
+            /* Converting navigation bar to mobile screen: inline to block */
+            .secondary-nav{
+                height: fit-content;
+                width: 100%;
+                padding: 20px;
+            }
+            .secondary-nav a{
+                display: block;
+            }
+         
+               
+          </style>
+           
+
+           <nav>
+            <a href="##">Home</a>
+            <a href="##">about</a>
+            <a href="##">Sign in</a>
+            <a href="##">Sign up</a>
+           </nav> 
+             <nav class="secondary-nav">
+            <a href="##">Home</a>
+            <a href="##">about</a>
+            <a href="##">Sign in</a>
+            <a href="##">Sign up</a>
+           </nav> 
+           <hr color="red">
+             <style>
+                 .model{
+                    height:100vh;
+                    width:100%;
+                    background-color: rgba(220,220,220,0.756);
+                    padding: 1px; 
+                 }
+                 .model .model-card{
+                      height: 300px;
+                      width: 450px;
+                      background-color: white;
+                      margin-top: 17%;
+                      margin-left: 35%;
+                      border-radius: 20px;
+                      box-shadow: 0cqb;
+                      text-align: center;
+                      padding-top: 50px;
+                      box-sizing: border-box;
+                 }
+             </style>
+           <div class="model">
+               <div class="model-card">
+                     <h2>Message</h2>
+                     <button>close</button>
+               </div>
+           </div>
+           <hr color="blue">
+           <style>
+            .box{
+                height: 100px;
+                width: 100px;
+                background-color: antiquewhite;
+                margin:10px;
+                display: inline-block;
+                
+            }
+           </style>
+           <div class="box">Sandeep NAth</div>
+           <div class="box">Sandeep Nath</div>
+           <div class="box">Indu Baby</div>
+
+</body>
+</html>
