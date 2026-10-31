@@ -9,18 +9,44 @@
             margin: 0;
         }
         .wrapper{
-            height: 80vh;
-            weidht: 80%;
+            /* height: 80vh;
+            width: 80%; */
+            /* min-height: 100vh; */
+            width:70%;
             background-color: aquamarine;
             box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.666)inset;     
 
             display: flex;   
-            flex-direction: row;
+            /* flex-direction: row;
             flex-direction: row-reverse;
             flex-direction: column;
-            flex-direction: column-reverse;
-            
-            
+            flex-direction: column-reverse; */
+            /* Aligns the child elements along with cross axis */
+            /* align-items: flex-start;
+            align-items: end;
+            align-items: center;
+            align-items: first baseline;
+            align-items: self-end; */
+
+            /* Align the element along with x axis */
+            justify-content: center;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: last baseline;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            /* column-gap: 6px; */
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: space-evenly;
+            flex-wrap: wrap;
+          
+
+        
         }
         .wrapper>.item{
              height: 180px; 
@@ -45,6 +71,9 @@
          .wrapper>.item:nth-child(4){
             background-color: lime;
         }
+       .two{
+            background-color: red;
+        }
     </style>
 </head>
 <body>
@@ -54,6 +83,7 @@
         <div class="item">3</div>
         <div class="item">4</div>
     </div>
+    <div class="wrapper two"></div>
     
 </body>
-</html>
+</html>   

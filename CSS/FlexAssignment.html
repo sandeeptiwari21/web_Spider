@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    .Main-wrapper{
+         /* margin: 5px; */
+            height: 100vh;
+            width :100%;
+            /* background-color: aqua; */
+             /* box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.666)inset;   */
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+            
+    }
+
+        .wrapper{
+            margin: 5px;
+            height: 30vh;
+            width :60%;
+            /* background-color: aqua; */
+             box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.666)inset;  
+             display: flex; 
+              flex-direction: row; 
+        }
+        .wrapper>.item3{
+            margin:15px;
+            height: 180px;
+            width: 280px;
+            color: black;
+            box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.666)inset;  
+            border-radius: 5%;
+        }
+        .wrapper>.item2{
+            margin: 15px;
+            height:180px;
+            width: 180px;
+            /* background-color: red; */
+             border-radius: 50%;
+              box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.666)inset;  
+        }
+        .wrapper:nth-child(2){
+             height: 350px;
+             width: 150px;
+             flex-direction: column;
+             padding-left: 1%;
+             display :flex;
+             flex-direction: row-reverse;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Main-wrapper">
+    <div class="wrapper">
+        <div class="item2"></div>
+        <div class="item3">
+            <h1>JSpider BTYM</h1>
+            <h2>Bengaluru</h2>
+            <h3>Institute on java Development</h3>
+        </div>
+    </div><br>
+    <div class="wrapper">
+         <div class="item2"></div>
+         <div class="item3">
+            <h1>Jspider BTYm</h1>
+            <h2>Bengaluru</h2>
+            <h3>Institute of java Developemnt</h3>
+         </div>
+    </div>
+  </div>  
+    <!-- this one previous own logic
+         <div class="wrapper">
+         <div class="item2"></div>
+         <div class="item3">
+            <h1>Jspider BTYm</h1>
+            <h2>Bengaluru</h2>
+            <h3>Institute of java Developemnt</h3>
+         </div>
+    </div>
+      -->
+</body>
+</html>
